@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixdrop Js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="pix_wrapper">
+        <input class="pix_input" type="text" placeholder="Search Indicators" value="">
+        <button>Click !</button>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu pix_drpul">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Angular Js</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="src/js/pixdrop.js"></script>
+<script src="dist/js/pixdrop.min.js"></script>
+<script>
+    $('.pix_wrapper').pixdropdown({
+        'onEnter': function() {
+            console.log("search");
+        }
+    });
+
+</script>
+
+</html>
